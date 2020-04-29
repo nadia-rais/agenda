@@ -229,7 +229,6 @@ a{
   border: 1px solid #e1e1e1;
   border-radius: 8px;
   text-transform: capitalize;
-  cursor: pointer;
 }
 .toggle__option:first-child {
     border-top-right-radius: 0;
