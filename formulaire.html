@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=yes"/>
+        <link rel="shortcut icon" type="image/x-icon" href="https://images.unsplash.com/photo-1551042686-e9c5f4e230cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="agenda.css">
+        <title>MY AGENDA - FORMULAIRE</title>
+    </head>
+
+    <body>
+        <header>
+          <ul class="navigation">
+            <li><a href="agenda.html">MY AGENDA</a></li>
+          </ul>
+        </header>
+        <main>
+          
+            <form id="formulaire" method="post" action="agenda.html">
+              <h1 id="form-title"> NOUVEL ÉVÉNEMENT</h1>
+              <div id="part-form">
+                <label for="nom">nom</label>
+                <input class="input-line" type="text" name="nom" id="nom"/>
+              </div>
+             
+              <div class="part">
+                <label for="day"></label>
+                <select class="select1" name="day" id="day" required autofocus>
+                  <option value="monday">MONDAY</option>
+                  <option value="tuesday">TUESDAY</option>
+                  <option value="wednesday">WEDNESDAY</option>
+                  <option value="thursday">THURSDAY</option>
+                  <option value="friday">FRIDAY</option>
+                  <option value="saturday">SATURDAY</option>
+                  <option value="sunday">SUNDAY</option>     
+                </select>
+              </div>
+
+              <div id="time">
+                <label for="debut">from</label>
+                <select name="debut" id="debut" required autofocus>
+                  <option value="0h">0 am</option>
+                  <option value="1h">1 am</option>
+                  <option value="2h">2 am</option>
+                  <option value="3h">3 am</option>
+                  <option value="4h">4 am</option>
+                  <option value="5h">5 am</option>
+                  <option value="6h">6 am</option>
+                  <option value="7h">7 am</option>
+                  <option value="8h">8 am</option>
+                  <option value="9h">9 am</option>
+                  <option value="10h">10 am</option>
+                  <option value="11h">11 am</option>
+                  <option value="12h">12 am</option>
+                  <option value="1h">1 pm</option>
+                  <option value="2h">2 pm</option>
+                  <option value="3h">3 pm</option>
+                  <option value="4h">4 pm</option>
+                  <option value="5h">5 pm</option>
+                  <option value="6h">6 pm</option>
+                  <option value="7h">7 pm</option>
+                  <option value="8h">8 pm</option>
+                  <option value="9h">9 pm</option>
+                  <option value="10h">10 pm</option>
+                  <option value="11h">11 pm</option>
+                </select>
+
+                <label for="fin">to</label>
+                <select  name="fin" id="fin" required autofocus>
+                  <option value="0h">0 am</option>
+                  <option value="1h">1 am</option>
+                  <option value="2h">2 am</option>
+                  <option value="3h">3 am</option>
+                  <option value="4h">4 am</option>
+                  <option value="5h">5 am</option>
+                  <option value="6h">6 am</option>
+                  <option value="7h">7 am</option>
+                  <option value="8h">8 am</option>
+                  <option value="9h">9 am</option>
+                  <option value="10h">10 am</option>
+                  <option value="11h">11 am</option>
+                  <option value="12h">12 am</option>
+                  <option value="1h">1 pm</option>
+                  <option value="2h">2 pm</option>
+                  <option value="3h">3 pm</option>
+                  <option value="4h">4 pm</option>
+                  <option value="5h">5 pm</option>
+                  <option value="6h">6 pm</option>
+                  <option value="7h">7 pm</option>
+                  <option value="8h">8 pm</option>
+                  <option value="9h">9 pm</option>
+                  <option value="10h">10 pm</option>
+                  <option value="11h">11 pm</option>
+                </select>
+              </div>
+
+              <div class="part">
+                <label for="activity"></label>
+                <select class="select1" name="activity" id="activity">
+                  <option value="break">BREAK</option>
+                  <option value="coding">CODING</option>
+                  <option value="english">ENGLISH</option>   
+                  <option value="homework">HOMEWORK</option>
+                  <option value="meet">MEET</option>
+                  <option value="search">SEARCH</option>
+                  <option value="perso">PERSO</option>
+                  <option value="todo">TO DO</option>
+                  <option value="weekend">WEEKEND</option>
+                </select>
+              </div>
+          
+              <div id="part-new">
+                <h2 id="subtitle">+ ajouter un agenda</h2>
+                <div id="new-agenda">
+                  <label for="color">select color</label>
+                  <input type="color" id="color" name="color" value="#110D57">
+                  <label for="nom">nom</label>
+                  <input class="input-line2" type="text" name="nom" id="nom"/>
+                </div>
+              </div>
+            
+              <label for="notes"></label>
+              <textarea type="textarea" name="notes" class="notes"id="notes" placeholder="notes"></textarea>
+          
+              <div id="box-button">
+                <button class="icon-btn add-btn">
+                  <div class="add-icon"></div>
+                  <div class="btn-txt">ajouter l'événement</div>
+                </button>
+              </div>
+            </form>
+        </main>
+        <footer>
+            <div>&copy; myagenda 2020</div>
+        </footer>
+    </body>

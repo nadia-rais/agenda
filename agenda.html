@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=yes"/>
+  <link rel="shortcut icon" type="image/x-icon" href="https://images.unsplash.com/photo-1551042686-e9c5f4e230cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="agenda.css">
+  <title>MY AGENDA</title>
+</head>
+<body>
+  <header>
+    <ul class="navigation">
+      <li>MY AGENDA</li>
+    </ul>
+  </header>
+  <main>
+    <div id="box">
+      <div id="box-button">
+        <button class="icon-btn add-btn">
+          <div class="add-icon"></div>
+          <a href="formulaire.html"><div class="btn-txt">nouvel événement</div></a>
+        </button>
+      </div>
+      
+        <div class="month">
+          <div class="toggle">
+            <div class="toggle__option">month</div>
+            <div class="toggle__option toggle__option--selected">week</div>
+          </div>
+          <div class="current-month">April 2020</div>
+        </div>
+    
+      <table>
+        <thead>
+          <tr>
+            <th class="hr"><a href="formulaire.html" target="_blank">+</a></th>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th class="wkd">SAT</th>
+            <th class="wkd">SUN</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="hour">0 am</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="wkday" rowspan="10"></td>
+            <td class="wkday" rowspan="12"></td>
+          </tr>
+          <tr>
+            <td class="hour">1 am</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td> 
+          </tr>
+          <tr>
+            <td class="hour">2 am</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td> 
+          </tr>
+          <tr>
+            <td class="hour">3 am</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td> 
+          </tr>
+          <tr>
+            <td class="hour">4 am</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td> 
+          </tr>
+          <tr>
+            <td class="hour">5 am</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td> 
+          </tr>
+          <tr>
+            <td class="hour">6 am</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td> 
+          </tr>
+          <tr>
+            <td class="hour">7 am</td>
+            <td colspan=5>
+              <p class="break">LEVER + DOUCHE + PREPA + PETIT-DEJ</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hour">8 am</td>
+            <td class="todo">
+              <p class="tooltip"> check email + admin
+                <span  class="tooltiptext"> 8h-9h </br> check + réponses demandes importantes</span>
+              </p>
+            </td>
+            <td class="coding">&nbsp;</td>
+            <td class="coding">&nbsp;</td>
+            <td class="coding">&nbsp;</td>
+            <td class="coding">&nbsp;</td> 
+          </tr>
+          <tr>
+            <td class="hour">9 am</td>
+            <td class="eng">
+              <p class="tooltip">English activities
+                <span class="tooltiptext">9h-10h </br> relecture textes et questions avant oral</span>
+              </p>
+            </td>
+            <td class="coding">&nbsp;</td>
+            <td class="coding">&nbsp;</td>
+            <td class="coding">&nbsp;</td>
+            <td class="coding">&nbsp;</td> 
+          </tr>
+          <tr>
+            <td class="hour">10 am</td>
+            <td class="eng">
+              <p class="tooltip"> English ORAL
+                <span  class="tooltiptext"> 10h-11h </br> meet oral groupe de 10h-10h30</span>
+              </p>
+            </td>
+            <td class="coding">
+              <p class="tooltip">PROJET
+                <span  class="tooltiptext">8h-13h </br> coding time</span>
+              </p>
+            </td>
+            <td class="coding">
+              <p class="tooltip">PROJET
+                <span  class="tooltiptext">8h-13h </br> coding time</span>
+              </p>
+            </td>
+            <td class="coding">
+              <p class="tooltip">PROJET
+                <span  class="tooltiptext">8h-13h </br> coding time</span>
+              </p>
+            </td>
+            <td class="coding">
+              <p class="tooltip">PROJET
+                <span  class="tooltiptext">8h-13h </br> coding time</span>
+              </p>
+            </td>
+            <td rowspan="2" class="perso">
+              <p class="tooltip">SPORT
+                <span  class="tooltiptext">10h-12h </br>footing + musculation poids de corps</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hour">11 am</td>
+            <td rowspan="2" class="search">
+              <p class="tooltip">NOUV. PROJET + MAQUETTE
+                <span  class="tooltiptext">11h-13h </br> check personne dispo si besoin + inscription intra + croquis idées</span>
+              </p>
+            </td>
+            <td class="coding">&nbsp;</td>
+            <td class="coding">&nbsp;</td>
+            <td class="coding">&nbsp;</td>
+            <td class="coding">&nbsp;</td> 
+          </tr>
+          <tr>
+            <td class="hour">12 am</td>
+            <td class="coding">&nbsp;</td>
+            <td class="coding">&nbsp;</td>
+            <td class="coding">&nbsp;</td>
+            <td class="coding">&nbsp;</td>  
+            <td rowspan=12 class="wkday"></td>
+            <td rowspan=12 class="wkday"></td>
+          </tr>
+          <tr>
+            <td class="hour">1 pm</td>
+            <td colspan=5 id="catégorie">
+              <p class="break">PAUSE DÉJ</p>
+            </td> 
+          </tr>
+          <tr>
+            <td class="hour">2 pm</td>
+            <td class="search"rowspan="2">
+              <p class="tooltip"> Tutos
+                <span class="tooltiptext">14h-16h </br> visionnage tutos + recherche cours en ligne en fonction du sujet de projet</span>
+              </p>
+            </td>
+            <td class="todo">
+              <p class="tooltip"> Meet
+                <span class="tooltiptext">14h-15h </br> meet en ligne cours ou divers</span>
+              </p>
+            </td> 
+            <td class="todo">
+              <p class="tooltip"> check email + admin
+                <span class="tooltiptext">14h-15h </br> check + réponses demandes importantes</span>
+              </p>
+            </td>
+            <td class="todo">
+              <p class="tooltip"> Meet
+                <span class="tooltiptext"> 14h-15h </br> meet en ligne cours ou divers</span>
+              </p>
+            </td>  
+            <td class="coding">
+              <p class="tooltip">check code → rendu
+                <span class="tooltiptext">14h-15h</br>relecture code + partage github avec deepthought + valider intra</span>
+              </p>
+            </td> 
+          </tr>
+          <tr>
+            <td class="hour">3 pm</td>
+            <td class="coding">&nbsp;</td>
+            <td class="coding">&nbsp;</td> 
+            <td class="coding">&nbsp;</td>
+            <td class="homework">
+              <p class="tooltip"> Meet : expression orale
+                <span  class="tooltiptext"> 15h-16h </br> meet en ligne Yasha : présentation projets</span>
+              </p>
+            </td> 
+          </tr>
+          <tr>
+            <td class="hour">4 pm</td>
+            <td class="coding">&nbsp;</td>
+            <td class="coding">&nbsp;</td> 
+            <td class="coding">&nbsp;</td>
+            <td class="coding">&nbsp;</td>
+            <td class="homework">
+              <p class="tooltip"> Projet : expression orale
+                <span class="tooltiptext">16h-17h </br> nouveau projet</span>
+              </p>
+            </td> 
+          </tr>
+          <tr>
+            <td class="hour">5 pm</td>
+            <td class="coding">
+              <p class="tooltip">PROJET
+                <span class="tooltiptext">16h-20h </br> coding time - partie html</span>
+              </p>
+            </td>
+            <td class="coding">
+              <p class="tooltip">PROJET
+                <span class="tooltiptext">15h-20h </br> coding time</span>
+              </p>
+            </td>
+            <td class="coding">
+              <p class="tooltip">PROJET
+                <span class="tooltiptext">15h-20h </br> coding time</span>
+              </p>
+            </td>
+            <td class="coding">
+              <p class="tooltip">PROJET
+                <span class="tooltiptext">15h-20h </br> coding time</span>
+              </p>
+            </td>
+            <td class="eng">
+              <p class="tooltip">English activities
+                <span class="tooltiptext">17h-18h </br> nouveau projet, découverte textes et réponses questions</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hour">6 pm</td>
+            <td class="coding">&nbsp;</td>
+            <td class="coding">&nbsp;</td> 
+            <td class="coding">&nbsp;</td>
+            <td class="coding">&nbsp;</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="hour">7 pm</td>
+            <td class="coding">&nbsp;</td>
+            <td class="coding">&nbsp;</td> 
+            <td class="coding">&nbsp;</td>
+            <td class="coding">&nbsp;</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="hour">8 pm</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td> 
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="hour">9 pm</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td> 
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="hour">10 pm</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td> 
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="hour">11 pm</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td> 
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+    </div>
+</main>
+<footer>
+  <div>&copy; myagenda 2020</div>
+</footer>
+</body>
+</html>

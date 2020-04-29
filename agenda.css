@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  max-width: 1600px;
+  background: #f5f7fa;
+}
+
+
+
+/***HEADER***/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.5px solid #110D57;
+    height: 100px;
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+
+/***MAIN***/
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/*TABLEAU*/ 
+table {
+  margin: 2.5% auto;
+  overflow-y: scroll;
+  position: static;
+  width: 85%;
+  height: 600px;
+  border-radius: 10px;
+  color: #110D57;
+  display: inline-block;
+  box-shadow:0 10px 40px rgba(0,0,0,0.08);
+}
+  
+thead th {
+  overflow: auto;
+  background: white;
+  color: rgba(9, 5, 129, 0.8);
+  font-size: 16px;
+  font-weight: 100;
+  height: 50px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  }
+
+th, td {
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  width: 14%;
+  }
+  
+tr {
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+  background-color: #fff;;
+  }
+ 
+/* - - - - - - - horaires - - - - - - - */
+.hr{
+  background-color: white;
+  color:rgba(9, 5, 129, 0.8);
+  font-size: 18px;
+  width: 5%;
+}
+a{
+  text-decoration: none;
+  color:rgba(9, 5, 129, 0.8);
+}
+
+.hr a:hover{
+  opacity: .5;
+  background-color:rgba(9, 5, 129);
+  color: white;
+  padding: 21px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.hour{
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  font-size: 8px;
+  width: 100%;
+  margin-left: 15px;
+}
+
+/* - - - - - - -  catégories - - - - - - - */
+.break{
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(253, 253, 26, 0.5);
+  color: #E3D419;
+  height: 30px;
+  }
+
+.todo{
+  background-color: #E5F6D4;
+  color: green;
+}
+
+.meet{
+  background-color: rgba(255, 195, 0, 0.5);
+  color: #D8A807;
+}
+
+.eng{
+ background-color: rgba(56, 254, 215, 0.5);
+ color: #10C6A5;
+}
+
+.coding{
+  background-color: rgba(205, 232, 242, 0.8);
+  color: #47AAE2;
+}
+
+.search{
+  background-color: rgba(8,145,244,0.5);
+  color:#067BCD;
+}
+
+.homework{
+  background-color: rgba(22, 160, 133,0.5);
+  color: #065C4B;
+}
+
+.wkd{
+  background-color: white;
+  color: rgba(9, 5, 129, 0.8);
+  width: 10%;
+
+}
+.wkday{
+  background-color: #EBEBEF;
+  color: gray;
+  width: 10%;
+}
+
+.perso{
+  background-color: rgba(204, 179, 201,0.5);
+  color: white;
+  width: 10%;
+}
+
+/* - - - - - - -  tooltip - - - - - - - */
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color:#C4C3BF;
+  color: #fff;
+  text-align: center;
+  padding: 5px 5px;
+  border-radius: 6px;
+  width: 120px;
+  bottom: 100%;
+  left: 50%; 
+  margin-left: -65px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #C4C3BF transparent transparent transparent;
+}
+/* - - - - - - -  barre mois - - - - - - - */
+.month{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin-top: 20px;
+}
+
+.toggle{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  font-size: 12px;
+}
+.toggle__option{
+  padding: 12.5px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.toggle__option:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.toggle__option:last-child {
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.toggle__option--selected{
+  border-color: white;
+  background-color: white;
+  color: var(--red);
+  font-weight: 500;
+  box-shadow: 1px 2px 30px -5px var(--red);
+}
+
+
+/* - - - - - - - add button - - - - - - - */
+
+#box-button{
+  display: flex;
+  margin-top: -25px;
+}
+.icon-btn {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #cdcdcd;
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.5s ease-in-out;
+}
+.add-btn:hover {
+  width: 180px;
+}
+.add-btn::before,
+.add-btn::after {
+  transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 10px;
+  top: calc(50% - 2px);
+  background: #FF5733;
+}
+.add-btn::after {
+  right: 14px;
+  overflow: hidden;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.add-btn::before {
+  left: 14px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.icon-btn:focus {
+  outline: none;
+}
+.btn-txt {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.add-btn:hover::before,
+.add-btn:hover::after {
+  width: 4px;
+  border-radius: 2px;
+}
+.add-btn:hover .btn-txt {
+  opacity: 1;
+}
+.add-icon::after,
+.add-icon::before {
+  transition: all 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 2px;
+  top: calc(50% - 10px);
+  background:#FF5733;
+  overflow: hidden;
+}
+.add-icon::before {
+  left: 22px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.add-icon::after {
+  right: 22px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.add-btn:hover .add-icon::before {
+  left: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+.add-btn:hover .add-icon::after {
+  right: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+/***FORMULAIRE***/
+
+form{
+  font-size: 11px;
+}
+
+#formulaire{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 2.5%;
+  padding: 20px;
+  height: 600px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+  box-shadow:0 10px 40px rgba(0,0,0,0.08);
+}
+
+#form-title{
+  display: flex;
+  font-size: 20px;
+  width: 100%;
+  height: 50px;
+  color: #110D57;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 0.5px solid #C4C3BF;
+}
+
+#part-form{
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+label{
+  margin-top: 5px;
+}
+
+.input-line{
+  border: hidden;
+  border: 0;
+  border-bottom:0.5px solid #110D57;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  width: 90%;
+}
+
+.part{
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+
+}
+
+#time{
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-left: -20%;
+}
+
+#part-new{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+#subtitle{
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#new-agenda{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.input-line2{
+  border: hidden;
+  border: 0;
+  border-bottom:0.5px solid #110D57;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  width: 55%;
+}
+
+textarea{
+  height: 150px;
+  margin-bottom: 50px;
+  width: 100%;
+  padding: 2px;
+}
+
+/* - - - - - - - selector - - - - - - - */
+.select1 {
+  width: 100%;
+  height: 40px;
+  font-size: 80%;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0;
+  background-color: rgba(9, 5, 129, 0.8);
+  border: none;
+  color: white;
+  padding: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: color 0.3s ease, background-color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+.select1::-ms-expand {
+  display: none; 
+}
+.select1:hover,
+.select1:focus {
+  color: rgba(9, 5, 129, 0.8);
+  background-color: white;
+  border-bottom-color: #DCDCDC;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+/***FOOTER***/
+footer{
+  display: flex;
+  max-height: 2.5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  justify-content: center;
+  font-size: 10px;
+  color: gainsboro;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+/***RESPONSIVE***/
+
+@media (max-width: 400px) {
+  #formulaire{
+    height: 500px;
+  }
+  .input-line2{
+    width: 20%;
+  }
+  label{
+    padding-left: 10px;
+  }
+  #time{
+    width: 80%;
+    justify-content: space-between;
+  }
+  #form-title{
+    font-size: 14px;
+    height: 43px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  textarea{
+    height: 100px;
+    margin-bottom: 50px;
+  }
+
+}
+
+@media (max-width: 640px) {
+  thead th {
+    font-size: 12px;
+    }
+  .search, .coding, .todo, .meet, .homework, .eng, .perso{
+    font-weight: 100;
+    font-size: 10px;
+    padding: 5px;
+    }
+
+    .hour{
+        margin-left: 0;
+    }
+    .tooltip .tooltiptext{
+      font-size: 9px;
+      width: 70px;
+      margin-left: -40px;
+    }
+  
+    #time{
+      width: 80%;
+    }
+
+    #new-agenda{
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+  }
+  @media (min-width: 640px) {
+    #time{
+      width: 80%;
+    } 
+  }
+
+  @media (max-width:960px) {
+    
+    .hour{
+      margin-left: 0px;
+    }
+    #formulaire{
+      font-size: 9px;
+
+    }
+    .input-line2{
+      width: 40%;
+      margin-top: 17.5px;
+    }
+    .input-line{
+       margin-bottom: 0px;
+    }
+    #part-form{
+      margin-bottom: 20px;
+    }  
+  }
+  
+    @media (min-width:960px) {
+      .hour{
+        margin-left: 0px;
+      }
+      #formulaire{
+        font-size: 10px;
+        width: 30%;
+      }
+    }
+    @media (min-width:1100px) {
+      #formulaire{
+        font-size: 10px;
+        width: 30%;
+      }
+    }
+    @media (min-width:1600px) {
+      #formulaire{
+        font-size: 12px;
+        width: 30%;
+      }
+    }
+
+
+
+
+
+
+
